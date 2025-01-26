@@ -1,7 +1,6 @@
 from instructions import display_instructions
 display_instructions()
 
-
 #COLLECTING + STORING PLAYER CODES-----------------------------
 #creating a class for players and their codes
 class Player:
@@ -10,7 +9,12 @@ class Player:
         self.code = None
 #input and storage of player code
     def set_code(self):
-        self.code = input(f"{self.name}, enter your secret code and hit ENTER:")
+        while True:
+            code = input(f"{self.name}, enter your 5-character code: ")
+            if len(code) == 5:
+                self.code = code
+                break 
+            print("Code must be exactly 5 characters. Try again.")
 
 player1 = Player("Player 1")
 player2 = Player("Player 2")
@@ -21,13 +25,11 @@ player1.set_code()
 import os
 os.system('cls'if os.name == 'nt' else 'clear')
 print("Player 1's code has been set and hidden")
-#-------------------------------------------------------
 
 #HIDING PLAYER 2s---------------------------------------
 player2.set_code()
 os.system('cls'if os.name == 'nt' else 'clear')
 print("Player 2's code has been set and hidden")
-#-------------------------------------------------------
 
 #COLLECTING + CHECKING THE PLAYER GUESSES----------------------
 def get_player_guess():
