@@ -36,8 +36,18 @@ def get_player_guess():
     return input("Enter your guess:")
 
 def check_guess(player_code, guess):
-    correct = sum(a == b for a, b in zip(player_code,guess))
-    return f"Correct digits in correct position:{correct}"
+    result = ""
+    correct = 0
+    for a, b in zip(player_code, guess):
+        if a == b:
+            #green for correct
+            result += f"\033[92m{b}\033[0m"
+            correct += 1
+        else:
+            #red for incorrect
+            result += f"\033[91m{b}\033[0m"
+
+    return f"Guess: {result} | Correct: {correct}"
 
 def  play_game(player1_code, player2_code):
     player1_guesses = 0
