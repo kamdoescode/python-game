@@ -8,7 +8,7 @@ This is a 2 player game with the objective of correctly guessing the opposing pl
 See the attached pdf in the folder for a link to the Github repo for documentation:
 https://github.com/kamdoescode/python-game.git
 
-s
+
 
 Resources:
 
