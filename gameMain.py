@@ -15,7 +15,7 @@ class Player:
                 self.code = code
                 break 
             print("Code must be exactly 5 characters. Try again.")
-
+#create player objects
 player1 = Player("Player 1")
 player2 = Player("Player 2")
 
@@ -78,7 +78,7 @@ def  play_game(player1_code, player2_code):
 
     return player1_guesses, player2_guesses
 
-
+#start the game and store the number of guesses for each player
 player1_guesses, player2_guesses = play_game(player1.code, player2.code)
 
 
