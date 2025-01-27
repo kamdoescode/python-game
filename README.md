@@ -5,7 +5,9 @@
 This is a 2 player game with the objective of correctly guessing the opposing player's code before they guess yours!  The game's logic is loosely based on the popular board game *Mastermind* and uses aspects of *Wordle* as well.  Read the instructions when the game starts to understand how to play.  
 
 
->>See the attached pdf in the folder for a link to the Github repo for documentation.
+See the attached pdf in the folder for a link to the Github repo for documentation:
+https://github.com/kamdoescode/python-game
+
 
 Resources:
 
